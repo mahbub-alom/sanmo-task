@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-h1{
-    color:red;
+
+header.nav-parents {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    margin: auto;
 }
