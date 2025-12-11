@@ -4,22 +4,1760 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sanmo Task</title>
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/6d8d0d6eef.js" crossorigin="anonymous"></script>
+  </head>
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;600;700&display=swap" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" />
+
   </head>
   <body>
-    <header class="nav-parents">
-      <nav class="logo-parents">
-        <img src="/assets/main-logo-white.png" alt="" />
-      </nav>
-      <nav class="nav-parents">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Service</a>
-        <a href="">Pages</a>
-        <a href="">Blog</a>
-        <a href="">Contact</a>
-      </nav>
-      <nav class="button-parents">button</nav>
+
+       <!-- nav menu item here  -->
+         <header class="header-area header-one transparent-header">
+
+        <div class="header-navigation sticky">
+            <div class="container-fluid">
+                <div class="primary-menu">
+                    <div class="site-branding">
+                        <a href="#">
+                            <img src="images/logo-white.svg" alt="Logo">
+                        </a>
+                    </div>
+
+                    <div class="theme-nav-menu">
+                        <div class="d-block d-xl-none">
+                            <div class="site-branding">
+
+                                <a href="#">
+                                    <img src="images/logo-white.svg" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+
+                        <nav class="main-menu">
+                            <ul>
+                                <li><a title="Home" href="/" class="nav-links">Home</a>
+                                    <ul class="sub-menu" role="menu">
+                                        <li><a title="Home One" href="#">Home One</a></li>
+                                        <li><a title="Home Two" href="#">Home Two</a></li>
+                                        <li><a title="Home Three" href="#">Home Three</a></li>
+                                    </ul>
+                                </li>
+                                <li><a title="About" href="#" class="nav-links">About</a></li>
+                                <li><a title="Services" href="#" class="nav-links">Services</a>
+                                    <ul class="sub-menu" role="menu">
+                                        <li><a title="Services" href="#">Services</a></li>
+                                        <li><a title="Service Details" href="#">Service Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a title="Pages" href="#" class="nav-links">Pages</a>
+                                    <ul class="sub-menu" role="menu">
+                                        <li><a title="Our Project" href="#" class="dropdown-items">Our Project</a></li>
+                                        <li><a title="Project Details" href="#" class="dropdown-items">Project Details</a></li>
+                                        <li><a title="Our Team" href="#" class="dropdown-items">Our Team</a></li>
+                                        <li><a title="Team Details" href="#" class="dropdown-items">Team Details</a></li>
+                                        <li><a title="Pricing" href="#" class="dropdown-items">Pricing</a></li>
+                                        <li><a title="FAQs" href="#" class="dropdown-items">FAQs</a></li>
+                                    </ul>
+                                </li>
+                                <li><a title="Blog" href="#" class="nav-links">Blog</a>
+                                    <ul class="sub-menu" role="menu">
+                                        <li><a title="Blog Grid" href="#" class="dropdown-items">Blog Grid</a></li>
+                                        <li><a title="Blog Standard" href="#" class="dropdown-items">Blog Standard</a></li>
+                                        <li><a title="Blog Details" href="#" class="dropdown-items">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a title="Contact" href="#" class="nav-links">Contact</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="mt-20 d-block d-md-none">
+                            <a href="#" class="theme-btn gradient-btn">Get a Quote<i class="far fa-arrow-right"></i></a>
+                        </div>
+
+                        <div class="theme-menu-bottom mt-50 d-block d-xl-none">
+                            <h5>Follow Us</h5>
+                            <ul class="social-link">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="nav-right-item">
+                        <div>
+                            <div class="search-btn"><i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="nav-button d-none d-md-block">
+                            <a href="#" class="theme-btn gradient-btn">Get a Quote<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="navbar-toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
+
+
+
+    <!-- main content start here  -->
+    <main>
+      <section class="frame1366wlight-container1">
+        <section class="frame1366wlight-thq-frame1366wlight-elm">
+          <div class="frame1366wlight-thq-section-elm10">
+            <div class="frame1366wlight-thq-shape-elm1"></div>
+            <div class="frame1366wlight-thq-shape-elm2"></div>
+            <img
+              src="public/background2762-9bc5n-200h.png"
+              alt="Background2762"
+              class="frame1366wlight-thq-background-elm10"
+            />
+            <span class="frame1366wlight-thq-text-elm100">
+              Smarter Tech for Tomorrow
+            </span>
+            <span class="frame1366wlight-thq-text-elm101">
+              <span class="frame1366wlight-thq-text-elm102">AI For Your</span>
+              <span class="frame1366wlight-thq-text-elm103">Business</span>
+              <br />
+              <span class="frame1366wlight-thq-text-elm104">Boosting</span>
+              <span>Growth</span>
+            </span>
+            <span class="frame1366wlight-thq-text-elm106">
+              <span>
+                Web developers and marketers who’ve been delivering digital
+                success for
+              </span>
+              <br />
+              <span>more than a decade. We excel at marketing websites</span>
+            </span>
+            <div class="frame1366wlight-thq-link-elm10">
+              <span class="frame1366wlight-thq-text-elm109">Get A Quote</span>
+              <img
+                src="public/icon2763-a8yy.svg"
+                alt="Icon2763"
+                class="frame1366wlight-thq-icon-elm10"
+              />
+            </div>
+            <div class="frame1366wlight-thq-list-elm1">
+              <div class="frame1366wlight-thq-item-gallery-image-elm1"></div>
+              <div class="frame1366wlight-thq-item-gallery-image-elm2"></div>
+              <div class="frame1366wlight-thq-item-gallery-image-elm3"></div>
+              <div class="frame1366wlight-thq-item-elm10">
+                <span class="frame1366wlight-thq-text-elm110">10+</span>
+              </div>
+            </div>
+            <img
+              src="public/icon2764-84t7.svg"
+              alt="Icon2764"
+              class="frame1366wlight-thq-icon-elm11"
+            />
+            <img
+              src="public/icon2764-59j8.svg"
+              alt="Icon2764"
+              class="frame1366wlight-thq-icon-elm12"
+            />
+            <img
+              src="public/icon2764-a1rh.svg"
+              alt="Icon2764"
+              class="frame1366wlight-thq-icon-elm13"
+            />
+            <img
+              src="public/icon2764-02i.svg"
+              alt="Icon2764"
+              class="frame1366wlight-thq-icon-elm14"
+            />
+            <img
+              src="public/icon2765-meke.svg"
+              alt="Icon2765"
+              class="frame1366wlight-thq-icon-elm15"
+            />
+            <span class="frame1366wlight-thq-text-elm111">20K+ users</span>
+            <!-- <img
+              src="images/hero-img1.png"
+              alt="imgi8heroimg112712"
+              class="frame1366wlight-thq-imgi8heroimg11-elm"
+            /> -->
+            <div class="frame1440wlight-heroimg1png"></div>
+          </div>
+          <div class="frame1366wlight-thq-section-elm11">
+            <div class="frame1366wlight-thq-shape-elm3"></div>
+            <img
+              src="public/background2765-gtu7-200h.png"
+              alt="Background2765"
+              class="frame1366wlight-thq-background-elm11"
+            />
+            <span class="frame1366wlight-thq-text-elm112">About Us</span>
+            <span class="frame1366wlight-thq-text-elm113">
+              <span>Transforming Businesses</span>
+              <br />
+              <span>with AI-Powered Innovation</span>
+            </span>
+            <span class="frame1366wlight-thq-text-elm116">
+              <span>
+                we are pioneers in the fusion of creativity and cutting-edge AI
+                technology. Our mission
+              </span>
+              <br />
+              <span>
+                is transform the way businesses approach design anddigital
+                strategy by delivering
+              </span>
+              <br />
+              <span>innovative</span>
+            </span>
+            <div class="frame1366wlight-thq-list-elm2">
+              <div class="frame1366wlight-thq-item-elm11">
+                <span class="frame1366wlight-thq-text-elm120">
+                  <span>Advanced Artificial Intelligence Capabilities</span>
+                  <br />
+                  <span>for Enhanced Efficiency.</span>
+                </span>
+              </div>
+              <div class="frame1366wlight-thq-item-elm12">
+                <span class="frame1366wlight-thq-text-elm123">
+                  <span>Real-time Data Analysis and Monitoring for</span>
+                  <br />
+                  <span>Optimized Performance.</span>
+                </span>
+              </div>
+              <div class="frame1366wlight-thq-item-elm13">
+                <span class="frame1366wlight-thq-text-elm126">
+                  <span>Collaborative and Autonomous Robots for</span>
+                  <br />
+                  <span>Seamless Integration</span>
+                </span>
+              </div>
+            </div>
+            <div class="frame1366wlight-thq-link-elm11">
+              <span class="frame1366wlight-thq-text-elm129">
+                View All Project
+              </span>
+              <img
+                src="public/icon2767-lm9.svg"
+                alt="Icon2767"
+                class="frame1366wlight-thq-icon-elm16"
+              />
+            </div>
+            <div class="frame1366wlight-thq-aboutimg1jpg-elm"></div>
+            <div class="frame1366wlight-thq-aboutimg2png-elm"></div>
+          </div>
+          <div class="frame1366wlight-thq-section-elm12">
+            <img
+              src="public/background2768-x1f-200h.png"
+              alt="Background2768"
+              class="frame1366wlight-thq-background-elm12"
+            />
+            <span class="frame1366wlight-thq-text-elm130">
+              Our Best Services
+            </span>
+            <span class="frame1366wlight-thq-text-elm131">
+              <span>Advanced Features Tailored</span>
+              <br />
+              <span>to Your Services</span>
+            </span>
+            <div class="frame1366wlight-thq-vertical-border-elm1">
+              <div class="frame1366wlight-thq-overlay-overlay-blur-elm1">
+                <span class="frame1366wlight-thq-text-elm134">
+                  <span>Successful AI adoption starts</span>
+                  <br />
+                  <span>with strategy. works with you</span>
+                  <br />
+                  <span>assess opportunities, design AI</span>
+                  <br />
+                  <span>roadmap, ensure smooth</span>
+                  <br />
+                  <span>integration results</span>
+                </span>
+                <div class="frame1366wlight-thq-icon1png-elm"></div>
+                <div class="frame1366wlight-thq-heading3-link-elm1">
+                  <span class="frame1366wlight-thq-text-elm140">
+                    AI Strategy
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="frame1366wlight-thq-vertical-border-elm2">
+              <div class="frame1366wlight-thq-container-elm10">
+                <span class="frame1366wlight-thq-text-elm141">
+                  <span>Harness predictive models and</span>
+                  <br />
+                  <span>advanced analytics to make</span>
+                  <br />
+                  <span>smarter decisions. assess</span>
+                  <br />
+                  <span>opportunities, ensure</span>
+                  <br />
+                  <span>integration results</span>
+                </span>
+                <div class="frame1366wlight-thq-icon2png-elm"></div>
+                <div class="frame1366wlight-thq-heading3-link-elm2">
+                  <span class="frame1366wlight-thq-text-elm147">
+                    Machine Learning
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="frame1366wlight-thq-vertical-border-elm3">
+              <div class="frame1366wlight-thq-container-elm11">
+                <span class="frame1366wlight-thq-text-elm148">
+                  <span>Streamline operations aboost</span>
+                  <br />
+                  <span>productivity with driven</span>
+                  <br />
+                  <span>automation. design AI roadmap,</span>
+                  <br />
+                  <span>ensure integration AI roadmap</span>
+                  <br />
+                  <span>integration results</span>
+                </span>
+                <div class="frame1366wlight-thq-icon3png-elm"></div>
+                <div class="frame1366wlight-thq-heading3-link-elm3">
+                  <span class="frame1366wlight-thq-text-elm154">
+                    Computer Vision
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="frame1366wlight-thq-vertical-border-elm4">
+              <div class="frame1366wlight-thq-container-elm12">
+                <span class="frame1366wlight-thq-text-elm155">
+                  <span>Unique AI solutions built to fit</span>
+                  <br />
+                  <span>your industry challenges and</span>
+                  <br />
+                  <span>goals. works with you assess</span>
+                  <br />
+                  <span>opportunities, ensure</span>
+                  <br />
+                  <span>integration results</span>
+                </span>
+                <div class="frame1366wlight-thq-icon4png-elm"></div>
+                <div class="frame1366wlight-thq-heading3-link-elm4">
+                  <span class="frame1366wlight-thq-text-elm161">
+                    NLP &amp; Chatbots
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame1366wlight-thq-section-elm13">
+            <div class="frame1366wlight-thq-shape-elm4"></div>
+            <div class="frame1366wlight-thq-container-elm13">
+              <img
+                src="public/background2771-de8w-200h.png"
+                alt="Background2771"
+                class="frame1366wlight-thq-background-elm13"
+              />
+              <span class="frame1366wlight-thq-text-elm162">
+                Our Projects &amp; Case Studies
+              </span>
+              <span class="frame1366wlight-thq-text-elm163">
+                <span>Real-World Applications of AI</span>
+                <br />
+                <span>Technology That Drive Impact</span>
+              </span>
+              <div class="frame1366wlight-thq-horizontal-border-elm1">
+                <div class="frame1366wlight-thq-horizontal-border-elm2">
+                  <button class="frame1366wlight-thq-button-elm1">
+                    <div class="frame1366wlight-thq-paragraph-elm1">
+                      <span class="frame1366wlight-thq-text-elm166">
+                        Deep Vision:
+                      </span>
+                      <span class="frame1366wlight-thq-text-elm167">
+                        <span>Autonomous vehicle navigation with advanced</span>
+                        <br />
+                        <span>Ai Startup Agency</span>
+                      </span>
+                    </div>
+                  </button>
+                </div>
+                <div class="frame1366wlight-thq-horizontal-border-elm3">
+                  <button class="frame1366wlight-thq-button-elm2">
+                    <div class="frame1366wlight-thq-paragraph-elm2">
+                      <span class="frame1366wlight-thq-text-elm170">
+                        Ai Verse:
+                      </span>
+                      <span class="frame1366wlight-thq-text-elm171">
+                        <span>Natural language pocessing powered by Ai</span>
+                        <br />
+                        <span>Startup Agency</span>
+                      </span>
+                    </div>
+                  </button>
+                  <div class="frame1366wlight-thq-projectimg2jpg-elm"></div>
+                  <span class="frame1366wlight-thq-text-elm174">
+                    <span>
+                      We provide customized solutions tailored to the specific
+                      needs and goals of their clients.
+                    </span>
+                    <br />
+                    <span>
+                      This can include website development, mobile app
+                      development.
+                    </span>
+                  </span>
+                  <div class="frame1366wlight-thq-link-elm12">
+                    <span class="frame1366wlight-thq-text-elm177">
+                      View Details
+                    </span>
+                  </div>
+                </div>
+                <button class="frame1366wlight-thq-button-elm3">
+                  <div class="frame1366wlight-thq-paragraph-elm3">
+                    <span class="frame1366wlight-thq-text-elm178">
+                      Deep Vision:
+                    </span>
+                    <span class="frame1366wlight-thq-text-elm179">
+                      <span>Predictive stock market analysis using Ai</span>
+                      <br />
+                      <span>Startup Agency</span>
+                    </span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="frame1366wlight-thq-section-elm14">
+            <span class="frame1366wlight-thq-text-elm182">
+              AI Image Generator
+            </span>
+            <img
+              src="public/icon2773-nom9.svg"
+              alt="Icon2773"
+              class="frame1366wlight-thq-icon-elm17"
+            />
+            <span class="frame1366wlight-thq-text-elm183">AI Technology</span>
+            <img
+              src="public/icon2773-121k.svg"
+              alt="Icon2773"
+              class="frame1366wlight-thq-icon-elm18"
+            />
+            <span class="frame1366wlight-thq-text-elm184">
+              Generate With Ease
+            </span>
+            <img
+              src="public/icon2774-aaw9.svg"
+              alt="Icon2774"
+              class="frame1366wlight-thq-icon-elm19"
+            />
+            <img
+              src="public/rectangle2774-flnm-500w.png"
+              alt="Rectangle2774"
+              class="frame1366wlight-thq-rectangle-elm10"
+            />
+            <img
+              src="public/rectangle2774-ivqn-200h.png"
+              alt="Rectangle2774"
+              class="frame1366wlight-thq-rectangle-elm11"
+            />
+            <img
+              src="public/rectangle2774-cjr9-400w.png"
+              alt="Rectangle2774"
+              class="frame1366wlight-thq-rectangle-elm12"
+            />
+            <img
+              src="public/rectangle2774-yerx-200h.png"
+              alt="Rectangle2774"
+              class="frame1366wlight-thq-rectangle-elm13"
+            />
+            <img
+              src="public/rectangle2774-o4t-500w.png"
+              alt="Rectangle2774"
+              class="frame1366wlight-thq-rectangle-elm14"
+            />
+            <img
+              src="public/rectangle2774-1drc-200h.png"
+              alt="Rectangle2774"
+              class="frame1366wlight-thq-rectangle-elm15"
+            />
+            <img
+              src="public/rectangle2774-4ypj-400w.png"
+              alt="Rectangle2774"
+              class="frame1366wlight-thq-rectangle-elm16"
+            />
+            <img
+              src="public/rectangle2774-p2g-200h.png"
+              alt="Rectangle2774"
+              class="frame1366wlight-thq-rectangle-elm17"
+            />
+            <img
+              src="public/rectangle2775-lc8f-500w.png"
+              alt="Rectangle2775"
+              class="frame1366wlight-thq-rectangle-elm18"
+            />
+            <img
+              src="public/rectangle2775-9i8b-200h.png"
+              alt="Rectangle2775"
+              class="frame1366wlight-thq-rectangle-elm19"
+            />
+            <img
+              src="public/rectangle2775-g0b-500w.png"
+              alt="Rectangle2775"
+              class="frame1366wlight-thq-rectangle-elm20"
+            />
+            <img
+              src="public/rectangle2775-axzg-200h.png"
+              alt="Rectangle2775"
+              class="frame1366wlight-thq-rectangle-elm21"
+            />
+            <img
+              src="public/rectangle2775-x61l-400w.png"
+              alt="Rectangle2775"
+              class="frame1366wlight-thq-rectangle-elm22"
+            />
+            <img
+              src="public/rectangle2775-hlp4-200h.png"
+              alt="Rectangle2775"
+              class="frame1366wlight-thq-rectangle-elm23"
+            />
+          </div>
+          <div class="frame1366wlight-thq-section-elm15">
+            <div class="frame1366wlight-thq-chooseimg1jpg-elm"></div>
+            <div class="frame1366wlight-thq-paragraph-background-elm">
+              <span class="frame1366wlight-thq-text-elm185">98%</span>
+              <span class="frame1366wlight-thq-text-elm186">
+                Highly rated by millions of user!
+              </span>
+            </div>
+            <img
+              src="public/background2776-65wq-200h.png"
+              alt="Background2776"
+              class="frame1366wlight-thq-background-elm14"
+            />
+            <span class="frame1366wlight-thq-text-elm187">WHY CHOOSE US</span>
+            <span class="frame1366wlight-thq-text-elm188">
+              <span>Transform your online presence</span>
+              <br />
+              <span>with AI Technology</span>
+            </span>
+            <span class="frame1366wlight-thq-text-elm191">
+              <span>
+                To be a leading AI agency recognized for creating intelligent
+                solutions that dr meaningful change
+              </span>
+              <br />
+              <span>
+                across industries, fostering smarter decision making, and
+                enabling businesses to achieve their full
+              </span>
+              <br />
+              <span>
+                potential to make image creation accessible, efficient, and
+                inspiring for
+              </span>
+            </span>
+            <div class="frame1366wlight-thq-border-elm10">
+              <div class="frame1366wlight-thq-plussymbol-elm">25</div>
+              <span class="frame1366wlight-thq-text-elm195">
+                Years Of Experience
+              </span>
+              <div class="frame1366wlight-thq-vertical-border-elm5">
+                <div class="frame1366wlight-thq-icon5png-elm"></div>
+                <span class="frame1366wlight-thq-text-elm196">
+                  Technology Integration
+                </span>
+                <span class="frame1366wlight-thq-text-elm197">
+                  <span>We bring a team of experienced AI</span>
+                  <br />
+                  <span>specialists, data scientists</span>
+                </span>
+                <div class="frame1366wlight-thq-icon6png-elm"></div>
+                <span class="frame1366wlight-thq-text-elm200">
+                  Certified Experts
+                </span>
+                <span class="frame1366wlight-thq-text-elm201">
+                  <span>We bring a team of experienced AI</span>
+                  <br />
+                  <span>specialists, data scientists</span>
+                </span>
+              </div>
+            </div>
+            <span class="frame1366wlight-thq-text-elm204">
+              Anyone Can Make You Promise We Can Give You Proof
+            </span>
+          </div>
+          <div class="frame1366wlight-thq-section-elm16">
+            <div class="frame1366wlight-thq-border-elm11">
+              <div class="frame1366wlight-thq-clientlogo3png-elm"></div>
+              <span class="frame1366wlight-thq-text-elm205">
+                <span class="frame1366wlight-thq-text-elm206">458+</span>
+                <span>Airbnb 5 start reviews</span>
+              </span>
+            </div>
+            <div class="frame1366wlight-thq-border-elm12">
+              <div class="frame1366wlight-thq-clientlogo4png-elm"></div>
+              <span class="frame1366wlight-thq-text-elm208">
+                <span class="frame1366wlight-thq-text-elm209">458+</span>
+                <span>Airbnb 5 start reviews</span>
+              </span>
+            </div>
+            <div class="frame1366wlight-thq-border-elm13">
+              <div class="frame1366wlight-thq-clientlogo5png-elm"></div>
+              <span class="frame1366wlight-thq-text-elm211">
+                <span class="frame1366wlight-thq-text-elm212">458+</span>
+                <span>Airbnb 5 start reviews</span>
+              </span>
+            </div>
+            <div class="frame1366wlight-thq-border-elm14">
+              <div class="frame1366wlight-thq-clientlogo2png-elm"></div>
+              <span class="frame1366wlight-thq-text-elm214">
+                <span class="frame1366wlight-thq-text-elm215">458+</span>
+                <span>Airbnb 5 start reviews</span>
+              </span>
+            </div>
+          </div>
+          <div class="frame1366wlight-thq-section-elm17">
+            <div class="frame1366wlight-thq-processshape-elm1"></div>
+            <div class="frame1366wlight-thq-container-elm14">
+              <img
+                src="public/background2779-qi7-200h.png"
+                alt="Background2779"
+                class="frame1366wlight-thq-background-elm15"
+              />
+              <span class="frame1366wlight-thq-text-elm217">How IT WORK</span>
+              <span class="frame1366wlight-thq-text-elm218">
+                The AI Transformation Journey
+              </span>
+              <span class="frame1366wlight-thq-text-elm219">
+                We begin with a detailed consultation to learn about your
+                business challenges, goals, and opportunities for AI integration
+              </span>
+              <div class="frame1366wlight-thq-background-elm16">
+                <div class="frame1366wlight-thq-processsh1png-elm"></div>
+                <span class="frame1366wlight-thq-text-elm220">
+                  <span>Discovery &amp;</span>
+                  <br />
+                  <span>Consultation</span>
+                </span>
+              </div>
+              <div class="frame1366wlight-thq-processshape-elm2"></div>
+              <span class="frame1366wlight-thq-text-elm223">
+                <span>Understanding</span>
+                <br />
+                <span>Your Needs</span>
+              </span>
+              <div class="frame1366wlight-thq-border-elm15">
+                <div class="frame1366wlight-thq-background-elm17">
+                  <span class="frame1366wlight-thq-text-elm226">
+                    <span>Our experts analyze your</span>
+                    <br />
+                    <span>data, workflows, and</span>
+                    <br />
+                    <span>technology stack</span>
+                  </span>
+                </div>
+                <div class="frame1366wlight-thq-background-elm18">
+                  <div class="frame1366wlight-thq-processsh2png-elm"></div>
+                  <span class="frame1366wlight-thq-text-elm230">
+                    <span>Data &amp;</span>
+                    <br />
+                    <span>Feasibility</span>
+                  </span>
+                </div>
+              </div>
+              <div class="frame1366wlight-thq-processshape-elm3"></div>
+              <span class="frame1366wlight-thq-text-elm233">
+                <span>Understanding</span>
+                <br />
+                <span>Your Needs</span>
+              </span>
+              <div class="frame1366wlight-thq-background-elm19">
+                <div class="frame1366wlight-thq-processsh3png-elm"></div>
+                <span class="frame1366wlight-thq-text-elm236">
+                  <span>Development &amp;</span>
+                  <br />
+                  <span>Integration</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="frame1366wlight-thq-section-elm18">
+            <img
+              src="public/image2781-o37l-900h.png"
+              alt="Image2781"
+              class="frame1366wlight-thq-image-elm"
+            />
+            <div class="frame1366wlight-thq-testimonialimgjpg-elm"></div>
+            <div class="frame1366wlight-thq-container-elm15">
+              <img
+                src="public/background2781-428g-200h.png"
+                alt="Background2781"
+                class="frame1366wlight-thq-background-elm20"
+              />
+              <span class="frame1366wlight-thq-text-elm239">Testimonial</span>
+              <span class="frame1366wlight-thq-text-elm240">
+                <span>Hear what our about customer say</span>
+                <br />
+                <span>about our AI agency</span>
+              </span>
+              <div class="frame1366wlight-thq-container-elm16">
+                <div class="frame1366wlight-thq-container-elm17">
+                  <div class="frame1366wlight-thq-background-elm21">
+                    <img
+                      src="public/icon2782-uua.svg"
+                      alt="Icon2782"
+                      class="frame1366wlight-thq-icon-elm20"
+                    />
+                    <img
+                      src="public/icon2782-jp34.svg"
+                      alt="Icon2782"
+                      class="frame1366wlight-thq-icon-elm21"
+                    />
+                    <img
+                      src="public/icon2782-40v.svg"
+                      alt="Icon2782"
+                      class="frame1366wlight-thq-icon-elm22"
+                    />
+                    <img
+                      src="public/icon2782-b4y.svg"
+                      alt="Icon2782"
+                      class="frame1366wlight-thq-icon-elm23"
+                    />
+                    <img
+                      src="public/icon2783-qgx.svg"
+                      alt="Icon2783"
+                      class="frame1366wlight-thq-icon-elm24"
+                    />
+                    <span class="frame1366wlight-thq-text-elm243">
+                      <span>
+                        "This AI product has completely transformed the way
+                      </span>
+                      <br />
+                      <span>
+                        our team operates. From automating repetitive task
+                      </span>
+                      <br />
+                      <span>
+                        providing smart insights, it’s allowed us to focus more
+                      </span>
+                      <br />
+                      <span>on strategy and branded active creativity!”</span>
+                    </span>
+                    <div class="frame1366wlight-thq-authorimg2jpg-elm"></div>
+                    <span class="frame1366wlight-thq-text-elm248">
+                      Guy Hawkins
+                    </span>
+                    <span class="frame1366wlight-thq-text-elm249">
+                      Head of Digital Strategy, NovaTech
+                    </span>
+                    <div class="frame1366wlight-thq-img-elm1"></div>
+                  </div>
+                  <div class="frame1366wlight-thq-background-elm22">
+                    <img
+                      src="public/icon2783-a3sa.svg"
+                      alt="Icon2783"
+                      class="frame1366wlight-thq-icon-elm25"
+                    />
+                    <img
+                      src="public/icon2784-v1w.svg"
+                      alt="Icon2784"
+                      class="frame1366wlight-thq-icon-elm26"
+                    />
+                    <img
+                      src="public/icon2784-t7zi.svg"
+                      alt="Icon2784"
+                      class="frame1366wlight-thq-icon-elm27"
+                    />
+                    <img
+                      src="public/icon2784-wrw6.svg"
+                      alt="Icon2784"
+                      class="frame1366wlight-thq-icon-elm28"
+                    />
+                    <img
+                      src="public/icon2784-2n4q.svg"
+                      alt="Icon2784"
+                      class="frame1366wlight-thq-icon-elm29"
+                    />
+                    <span class="frame1366wlight-thq-text-elm250">
+                      <span>
+                        "This AI product has completely transformed the way
+                      </span>
+                      <br />
+                      <span>
+                        our team operates. From automating repetitive task
+                      </span>
+                      <br />
+                      <span>
+                        providing smart insights, it’s allowed us to focus more
+                      </span>
+                      <br />
+                      <span>on strategy and branded active creativity!”</span>
+                    </span>
+                    <div class="frame1366wlight-thq-authorimg1jpg-elm"></div>
+                    <span class="frame1366wlight-thq-text-elm255">
+                      Jacob Jones
+                    </span>
+                    <span class="frame1366wlight-thq-text-elm256">
+                      Head of Digital Strategy, NovaTech
+                    </span>
+                    <div class="frame1366wlight-thq-img-elm2"></div>
+                  </div>
+                </div>
+                <div class="frame1366wlight-thq-border-elm16">
+                  <img
+                    src="public/icon2785-94k.svg"
+                    alt="Icon2785"
+                    class="frame1366wlight-thq-icon-elm30"
+                  />
+                </div>
+                <div class="frame1366wlight-thq-border-elm17">
+                  <img
+                    src="public/icon2785-ppdu.svg"
+                    alt="Icon2785"
+                    class="frame1366wlight-thq-icon-elm31"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame1366wlight-thq-section-elm19">
+            <img
+              src="public/background2786-33ch-200h.png"
+              alt="Background2786"
+              class="frame1366wlight-thq-background-elm23"
+            />
+            <span class="frame1366wlight-thq-text-elm257">
+              Advanced Technology
+            </span>
+            <span class="frame1366wlight-thq-text-elm258">
+              <span>Advances in AI Technology Are</span>
+            
+              <span>Here to Impact the Future.</span>
+            </span>
+            <div class="frame1366wlight-thq-background-border-elm1">
+              <span class="frame1366wlight-thq-text-elm261">01</span>
+              <div class="frame1366wlight-thq-icon7png-elm"></div>
+              <span class="frame1366wlight-thq-text-elm262">Tech support</span>
+              <span class="frame1366wlight-thq-text-elm263">
+                <span>To empower businesses</span>
+                <br />
+                <span>with intelligent, scalable,</span>
+                <br />
+                <span>impactful solutions that</span>
+                <br />
+                <span>drive</span>
+              </span>
+            </div>
+            <div class="frame1366wlight-thq-background-border-elm2">
+              <span class="frame1366wlight-thq-text-elm268">02</span>
+              <div class="frame1366wlight-thq-icon8png-elm"></div>
+              <span class="frame1366wlight-thq-text-elm269">Robo Genius</span>
+              <span class="frame1366wlight-thq-text-elm270">
+                <span>To empower businesses</span>
+                <br />
+                <span>with intelligent, scalable,</span>
+                <br />
+                <span>impactful solutions that</span>
+                <br />
+                <span>drive</span>
+              </span>
+            </div>
+            <div class="frame1366wlight-thq-background-border-elm3">
+              <span class="frame1366wlight-thq-text-elm275">03</span>
+              <div class="frame1366wlight-thq-icon9png-elm"></div>
+              <span class="frame1366wlight-thq-text-elm276">
+                Image Generation
+              </span>
+              <span class="frame1366wlight-thq-text-elm277">
+                <span>To empower businesses</span>
+                <br />
+                <span>with intelligent, scalable,</span>
+                <br />
+                <span>impactful solutions that</span>
+                <br />
+                <span>drive</span>
+              </span>
+            </div>
+            <div class="frame1366wlight-thq-background-border-elm4">
+              <span class="frame1366wlight-thq-text-elm282">04</span>
+              <div class="frame1366wlight-thq-icon10png-elm"></div>
+              <span class="frame1366wlight-thq-text-elm283">Chatbots</span>
+              <span class="frame1366wlight-thq-text-elm284">
+                <span>To empower businesses</span>
+                <br />
+                <span>with intelligent, scalable,</span>
+                <br />
+                <span>impactful solutions that</span>
+                <br />
+                <span>drive</span>
+              </span>
+            </div>
+          </div>
+          <div class="frame1366wlight-thq-background-elm24">
+            <div class="frame1366wlight-thq-section-elm20">
+              <img
+                src="public/background2788-hwd-200h.png"
+                alt="Background2788"
+                class="frame1366wlight-thq-background-elm25"
+              />
+              <span class="frame1366wlight-thq-text-elm289">Pricing plan</span>
+              <span class="frame1366wlight-thq-text-elm290">
+                <span>Simple and Adaptable, Pay</span>
+                <br />
+                <span>only for what you need.</span>
+              </span>
+              <div class="frame1366wlight-thq-link-elm13">
+                <span class="frame1366wlight-thq-text-elm293">
+                  Get In Touch
+                </span>
+                <img
+                  src="public/icon2789-jvu.svg"
+                  alt="Icon2789"
+                  class="frame1366wlight-thq-icon-elm32"
+                />
+              </div>
+            </div>
+            <div class="frame1366wlight-thq-background-border-elm5">
+              <div class="frame1366wlight-thq-container-elm18">
+                <span class="frame1366wlight-thq-text-elm294">Basic</span>
+                <span class="frame1366wlight-thq-text-elm295">Free</span>
+                <span class="frame1366wlight-thq-text-elm296">
+                  Great for private individuals
+                </span>
+                <div class="frame1366wlight-thq-list-elm3">
+                  <div class="frame1366wlight-thq-item-elm14">
+                    <img
+                      src="public/background2790-gnyn-200h.png"
+                      alt="Background2790"
+                      class="frame1366wlight-thq-background-elm26"
+                    />
+                    <span class="frame1366wlight-thq-text-elm297">1 User</span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-elm15">
+                    <img
+                      src="public/background2790-k3qw-200h.png"
+                      alt="Background2790"
+                      class="frame1366wlight-thq-background-elm27"
+                    />
+                    <span class="frame1366wlight-thq-text-elm298">
+                      Unlimited Projects
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-elm16">
+                    <img
+                      src="public/background2790-rchh-200h.png"
+                      alt="Background2790"
+                      class="frame1366wlight-thq-background-elm28"
+                    />
+                    <span class="frame1366wlight-thq-text-elm299">
+                      Download prototypes
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-elm17">
+                    <img
+                      src="public/background2790-akc7-200h.png"
+                      alt="Background2790"
+                      class="frame1366wlight-thq-background-elm29"
+                    />
+                    <span class="frame1366wlight-thq-text-elm300">
+                      1 Gb workspace
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-elm18">
+                    <img
+                      src="public/background2791-hoih-200h.png"
+                      alt="Background2791"
+                      class="frame1366wlight-thq-background-elm30"
+                    />
+                    <span class="frame1366wlight-thq-text-elm301">
+                      25 Deployment Slots
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-elm19">
+                    <img
+                      src="public/background2791-8j6g-200h.png"
+                      alt="Background2791"
+                      class="frame1366wlight-thq-background-elm31"
+                    />
+                    <span class="frame1366wlight-thq-text-elm302">
+                      Customer Management
+                    </span>
+                  </div>
+                </div>
+                <div class="frame1366wlight-thq-link-elm14">
+                  <img
+                    src="public/background2791-s59-200h.png"
+                    alt="Background2791"
+                    class="frame1366wlight-thq-background-elm32"
+                  />
+                  <span class="frame1366wlight-thq-text-elm303">
+                    Get Started Now
+                  </span>
+                  <img
+                    src="public/icon2792-grqy4.svg"
+                    alt="Icon2792"
+                    class="frame1366wlight-thq-icon-elm33"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="frame1366wlight-thq-background-border-elm6">
+              <div class="frame1366wlight-thq-background-elm33">
+                <span class="frame1366wlight-thq-text-elm304">Premium</span>
+                <span class="frame1366wlight-thq-text-elm305">$69</span>
+                <span class="frame1366wlight-thq-text-elm306">
+                  14 days free period
+                </span>
+                <div class="frame1366wlight-thq-background-elm34">
+                  <span class="frame1366wlight-thq-text-elm307">Popular</span>
+                </div>
+                <div class="frame1366wlight-thq-list-elm4">
+                  <div class="frame1366wlight-thq-item-elm20">
+                    <img
+                      src="public/overlay2793-51gb-200h.png"
+                      alt="Overlay2793"
+                      class="frame1366wlight-thq-overlay-elm1"
+                    />
+                    <span class="frame1366wlight-thq-text-elm308">1 User</span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-elm21">
+                    <img
+                      src="public/overlay2793-nn29-200h.png"
+                      alt="Overlay2793"
+                      class="frame1366wlight-thq-overlay-elm2"
+                    />
+                    <span class="frame1366wlight-thq-text-elm309">
+                      Unlimited Projects
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-elm22">
+                    <img
+                      src="public/overlay2793-e1v9a-200h.png"
+                      alt="Overlay2793"
+                      class="frame1366wlight-thq-overlay-elm3"
+                    />
+                    <span class="frame1366wlight-thq-text-elm310">
+                      Download prototypes
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-elm23">
+                    <img
+                      src="public/overlay2794-ngf-200h.png"
+                      alt="Overlay2794"
+                      class="frame1366wlight-thq-overlay-elm4"
+                    />
+                    <span class="frame1366wlight-thq-text-elm311">
+                      1 Gb workspace
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-elm24">
+                    <img
+                      src="public/overlay2794-2qu8-200h.png"
+                      alt="Overlay2794"
+                      class="frame1366wlight-thq-overlay-elm5"
+                    />
+                    <span class="frame1366wlight-thq-text-elm312">
+                      25 Deployment Slots
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-elm25">
+                    <img
+                      src="public/overlay2794-smw-200h.png"
+                      alt="Overlay2794"
+                      class="frame1366wlight-thq-overlay-elm6"
+                    />
+                    <span class="frame1366wlight-thq-text-elm313">
+                      Customer Management
+                    </span>
+                  </div>
+                </div>
+                <div class="frame1366wlight-thq-link-elm15">
+                  <span class="frame1366wlight-thq-text-elm314">
+                    Get Started Now
+                  </span>
+                  <img
+                    src="public/icon2795-ptui.svg"
+                    alt="Icon2795"
+                    class="frame1366wlight-thq-icon-elm34"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="frame1366wlight-thq-background-border-elm7">
+              <div class="frame1366wlight-thq-container-elm19">
+                <span class="frame1366wlight-thq-text-elm315">Advanced</span>
+                <span class="frame1366wlight-thq-text-elm316">$99</span>
+                <span class="frame1366wlight-thq-text-elm317">
+                  01 Month free period
+                </span>
+                <div class="frame1366wlight-thq-list-elm5">
+                  <div class="frame1366wlight-thq-item-elm26">
+                    <img
+                      src="public/background2795-t3ha-200h.png"
+                      alt="Background2795"
+                      class="frame1366wlight-thq-background-elm35"
+                    />
+                    <span class="frame1366wlight-thq-text-elm318">1 User</span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-elm27">
+                    <img
+                      src="public/background2796-73jh-200h.png"
+                      alt="Background2796"
+                      class="frame1366wlight-thq-background-elm36"
+                    />
+                    <span class="frame1366wlight-thq-text-elm319">
+                      Unlimited Projects
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-elm28">
+                    <img
+                      src="public/background2796-uj78-200h.png"
+                      alt="Background2796"
+                      class="frame1366wlight-thq-background-elm37"
+                    />
+                    <span class="frame1366wlight-thq-text-elm320">
+                      Download prototypes
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-elm29">
+                    <img
+                      src="public/background2796-qhtp-200h.png"
+                      alt="Background2796"
+                      class="frame1366wlight-thq-background-elm38"
+                    />
+                    <span class="frame1366wlight-thq-text-elm321">
+                      1 Gb workspace
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-elm30">
+                    <img
+                      src="public/background2797-n8q-200h.png"
+                      alt="Background2797"
+                      class="frame1366wlight-thq-background-elm39"
+                    />
+                    <span class="frame1366wlight-thq-text-elm322">
+                      25 Deployment Slots
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-elm31">
+                    <img
+                      src="public/background2797-32u8-200h.png"
+                      alt="Background2797"
+                      class="frame1366wlight-thq-background-elm40"
+                    />
+                    <span class="frame1366wlight-thq-text-elm323">
+                      Customer Management
+                    </span>
+                  </div>
+                </div>
+                <div class="frame1366wlight-thq-link-elm16">
+                  <img
+                    src="public/background2797-2cw3-200h.png"
+                    alt="Background2797"
+                    class="frame1366wlight-thq-background-elm41"
+                  />
+                  <span class="frame1366wlight-thq-text-elm324">
+                    Get Started Now
+                  </span>
+                  <img
+                    src="public/icon2797-6rx.svg"
+                    alt="Icon2797"
+                    class="frame1366wlight-thq-icon-elm35"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame1366wlight-thq-section-elm21">
+            <div class="frame1366wlight-thq-shape-elm5"></div>
+            <div class="frame1366wlight-thq-container-elm20">
+              <img
+                src="public/background2798-ie4l-200h.png"
+                alt="Background2798"
+                class="frame1366wlight-thq-background-elm42"
+              />
+              <span class="frame1366wlight-thq-text-elm325">
+                AI Expert Team
+              </span>
+              <span class="frame1366wlight-thq-text-elm326">
+                Our Professionals AI Expert Team
+              </span>
+              <div class="frame1366wlight-thq-tablist-elm">
+                <div class="frame1366wlight-thq-item-tab-elm1">
+                  <div class="frame1366wlight-thq-teamthumb1jpg-elm"></div>
+                  <span class="frame1366wlight-thq-text-elm327">
+                    Guy Hawkins
+                  </span>
+                  <span class="frame1366wlight-thq-text-elm328">
+                    President of Sales
+                  </span>
+                </div>
+                <div class="frame1366wlight-thq-item-tab-elm2">
+                  <div class="frame1366wlight-thq-teamthumb2jpg-elm"></div>
+                  <span class="frame1366wlight-thq-text-elm329">
+                    Brooklyn Simmons
+                  </span>
+                  <span class="frame1366wlight-thq-text-elm330">
+                    President of Sales
+                  </span>
+                </div>
+                <div class="frame1366wlight-thq-item-tab-elm3">
+                  <div class="frame1366wlight-thq-teamthumb3jpg-elm"></div>
+                  <span class="frame1366wlight-thq-text-elm331">
+                    Jenny Wilson
+                  </span>
+                  <span class="frame1366wlight-thq-text-elm332">
+                    President of Sales
+                  </span>
+                </div>
+              </div>
+              <div class="frame1366wlight-thq-tabpanel-elm">
+                <div class="frame1366wlight-thq-teamimg2jpg-elm"></div>
+                <span class="frame1366wlight-thq-text-elm333">
+                  Brooklyn Simmons
+                </span>
+                <span class="frame1366wlight-thq-text-elm334">
+                  President of Sales
+                </span>
+                <span class="frame1366wlight-thq-text-elm335">
+                  <span>
+                    We value curiosity, collaboration, and a can do attitude.
+                  </span>
+                  <br />
+                  <span>Oh, and coffee lots of coffee. Come join a team</span>
+                  <br />
+                  <span>celebrates your unique skills and helps you</span>
+                </span>
+                <div class="frame1366wlight-thq-heading6-elm1">
+                  <span class="frame1366wlight-thq-text-elm339">
+                    Artificial Intelligence
+                  </span>
+                  <span class="frame1366wlight-thq-text-elm340">90%</span>
+                </div>
+                <div class="frame1366wlight-thq-border-elm18">
+                  <div class="frame1366wlight-thq-background-border-elm8"></div>
+                </div>
+                <div class="frame1366wlight-thq-heading6-elm2">
+                  <span class="frame1366wlight-thq-text-elm341">
+                    Robotics Management
+                  </span>
+                  <span class="frame1366wlight-thq-text-elm342">70%</span>
+                </div>
+                <div class="frame1366wlight-thq-border-elm19">
+                  <div class="frame1366wlight-thq-background-border-elm9"></div>
+                </div>
+                <div class="frame1366wlight-thq-border-elm20">
+                  <div class="frame1366wlight-thq-background-elm43">
+                    <div class="frame1366wlight-thq-heading3-elm">
+                      <span class="frame1366wlight-thq-text-elm343">10+</span>
+                      <span class="frame1366wlight-thq-text-elm344">
+                        Professional Experience
+                      </span>
+                    </div>
+                  </div>
+                  <div class="frame1366wlight-thq-link-elm17"><i class="fa-brands fa-facebook-f"></i></div>
+                  <div class="frame1366wlight-thq-link-elm18"><i class="fa-brands fa-twitter"></i></div>
+                  <div class="frame1366wlight-thq-link-elm19"><i class="fa-brands fa-linkedin-in"></i></div>
+                  <div class="frame1366wlight-thq-link-elm20"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame1366wlight-thq-section-elm22">
+            <div class="frame1366wlight-thq-background-overlay-blur-elm">
+              <span class="frame1366wlight-thq-text-elm345">Get in touch</span>
+              <span class="frame1366wlight-thq-text-elm346">
+                <span>
+                  Just fill out the form and our global experts will be in touch
+                </span>
+                <br />
+                <span>
+                  right away with package and price solution to help you!
+                </span>
+              </span>
+              <div class="frame1366wlight-thq-form-contactform-elm1">
+                <div class="frame1366wlight-thq-input-elm1">
+                  <div class="frame1366wlight-thq-container-elm21">
+                    <span class="frame1366wlight-thq-text-elm349">
+                      Your name
+                    </span>
+                  </div>
+                </div>
+                <div class="frame1366wlight-thq-input-elm2">
+                  <div class="frame1366wlight-thq-container-elm22">
+                    <span class="frame1366wlight-thq-text-elm350">
+                      Email Address
+                    </span>
+                  </div>
+                </div>
+                <div class="frame1366wlight-thq-input-elm3">
+                  <div class="frame1366wlight-thq-container-elm23">
+                    <span class="frame1366wlight-thq-text-elm351">
+                      Company Name
+                    </span>
+                  </div>
+                </div>
+                <div class="frame1366wlight-thq-input-elm4">
+                  <div class="frame1366wlight-thq-container-elm24">
+                    <span class="frame1366wlight-thq-text-elm352">
+                      Phone Number
+                    </span>
+                  </div>
+                </div>
+                <div class="frame1366wlight-thq-input-elm5">
+                  <div class="frame1366wlight-thq-container-elm25">
+                    <span class="frame1366wlight-thq-text-elm353">Subject</span>
+                  </div>
+                </div>
+                <div class="frame1366wlight-thq-textarea-elm">
+                  <span class="frame1366wlight-thq-text-elm354">Message</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Send Message"
+                  class="frame1366wlight-thq-input-elm6"
+                />
+              </div>
+            </div>
+            <img
+              src="public/background2710-zhed-200h.png"
+              alt="Background2710"
+              class="frame1366wlight-thq-background-elm44"
+            />
+            <span class="frame1366wlight-thq-text-elm355">
+              We are here to answer all your questions
+            </span>
+            <span class="frame1366wlight-thq-text-elm356">
+              <span>Welcome to the future of</span>
+              <br />
+              <span>artificial intelligence!</span>
+            </span>
+            <span class="frame1366wlight-thq-text-elm359">
+              <span>
+                Artificial Intelligence refers to the development of computer
+                systems that
+              </span>
+              <br />
+              <span>
+                possess the ability to perform activities typically requiring
+                human intelligence
+              </span>
+              <br />
+              <span>abilities!</span>
+            </span>
+            <div class="frame1366wlight-thq-link-elm21">
+              <span class="frame1366wlight-thq-text-elm363">Get In Touch</span>
+              <img
+                src="public/icon2710-n45.svg"
+                alt="Icon2710"
+                class="frame1366wlight-thq-icon-elm36"
+              />
+            </div>
+            <div class="frame1366wlight-thq-link-elm22">
+              <span class="frame1366wlight-thq-text-elm364">Learn More</span>
+              <img
+                src="public/icon2710-wxl.svg"
+                alt="Icon2710"
+                class="frame1366wlight-thq-icon-elm37"
+              />
+            </div>
+            <div class="frame1366wlight-thq-horizontal-border-elm4">
+              <div class="frame1366wlight-thq-horizontal-border-elm5">
+                <div class="frame1366wlight-thq-overlay-overlay-blur-elm2">
+                  <img
+                    src="public/icon2710-7gip.svg"
+                    alt="Icon2710"
+                    class="frame1366wlight-thq-icon-elm38"
+                  />
+                </div>
+                <span class="frame1366wlight-thq-text-elm365">
+                  Feel Free to get in Touch
+                </span>
+                <div class="frame1366wlight-thq-heading4-link-elm1">
+                  <span class="frame1366wlight-thq-text-elm366">
+                    +990 123 456 789
+                  </span>
+                </div>
+              </div>
+              <div class="frame1366wlight-thq-horizontal-border-elm6">
+                <div class="frame1366wlight-thq-overlay-overlay-blur-elm3">
+                  <img
+                    src="public/icon2710-e327.svg"
+                    alt="Icon2710"
+                    class="frame1366wlight-thq-icon-elm39"
+                  />
+                </div>
+                <span class="frame1366wlight-thq-text-elm367">
+                  How can we Help you
+                </span>
+                <div class="frame1366wlight-thq-heading4-link-elm2">
+                  <span class="frame1366wlight-thq-text-elm368">
+                    info@exmple.com
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame1366wlight-thq-section-elm23">
+            <img
+              src="public/background2710-jo1m-200h.png"
+              alt="Background2710"
+              class="frame1366wlight-thq-background-elm45"
+            />
+            <span class="frame1366wlight-thq-text-elm369">Latest blog</span>
+            <span class="frame1366wlight-thq-text-elm370">
+              AI and Creativity Stories Tips
+            </span>
+            <div class="frame1366wlight-thq-frame2149370109jpg-elm"></div>
+            <img
+              src="public/icon2710-0g9j.svg"
+              alt="Icon2710"
+              class="frame1366wlight-thq-icon-elm40"
+            />
+            
+            <span class="frame1366wlight-thq-text-elm371">By</span> 
+            <div class="frame1366wlight-thq-link-elm23">
+              <span class="frame1366wlight-thq-text-elm372">orbia</span>
+            </div>
+            <img
+              src="public/icon2710-nba.svg"
+              alt="Icon2710"
+              class="frame1366wlight-thq-icon-elm41"
+            />
+            <div class="frame1366wlight-thq-link-elm24">
+              <span class="frame1366wlight-thq-text-elm373">No Comments</span>
+            </div>
+            <div class="frame1366wlight-thq-heading4-elm1">
+              <div class="frame1366wlight-thq-link-elm25">
+                <span class="frame1366wlight-thq-text-elm374">
+                  <span>Unlocking the Power of Data for</span>
+                  
+                  <span>Business Success.</span>
+                </span>
+              </div>
+            </div>
+            <div class="frame1366wlight-thq-link-elm26">
+              <span class="frame1366wlight-thq-text-elm377">Read More</span>
+              <img
+                src="public/icon2711-711.svg"
+                alt="Icon2711"
+                class="frame1366wlight-thq-icon-elm42"
+              />
+            </div>
+            <div class="frame1366wlight-thq-frame2151003702jpg-elm"></div>
+            <img
+              src="public/icon2711-vn1m.svg"
+              alt="Icon2711"
+              class="frame1366wlight-thq-icon-elm43"
+            />
+            <span class="frame1366wlight-thq-text-elm378">By</span>
+            <div class="frame1366wlight-thq-link-elm27">
+              <span class="frame1366wlight-thq-text-elm379">orbia</span>
+            </div>
+            <img
+              src="public/icon2711-l0kb.svg"
+              alt="Icon2711"
+              class="frame1366wlight-thq-icon-elm44"
+            />
+            <div class="frame1366wlight-thq-link-elm28">
+              <span class="frame1366wlight-thq-text-elm380">No Comments</span>
+            </div>
+            <div class="frame1366wlight-thq-heading4-elm2">
+              <div class="frame1366wlight-thq-link-elm29">
+                <span class="frame1366wlight-thq-text-elm374">
+                  <span>The Future of Work Embracin</span>
+               
+                  <span>Digital Transformation</span>
+                </span>
+              </div>
+            </div>
+            <div class="frame1366wlight-thq-link-elm30">
+              <span class="frame1366wlight-thq-text-elm384">Read More</span>
+              <img
+                src="public/icon2711-ynra.svg"
+                alt="Icon2711"
+                class="frame1366wlight-thq-icon-elm45"
+              />
+            </div>
+            <div class="frame1366wlight-thq-frame129793jpg-elm"></div>
+            <img
+              src="public/icon2711-ffx.svg"
+              alt="Icon2711"
+              class="frame1366wlight-thq-icon-elm46"
+            />
+            <span class="frame1366wlight-thq-text-elm385">By</span>
+            <div class="frame1366wlight-thq-link-elm31">
+              <span class="frame1366wlight-thq-text-elm386">orbia</span>
+            </div>
+            <img
+              src="public/icon2711-6g4d.svg"
+              alt="Icon2711"
+              class="frame1366wlight-thq-icon-elm47"
+            />
+            <div class="frame1366wlight-thq-link-elm32">
+              <span class="frame1366wlight-thq-text-elm387">No Comments</span>
+            </div>
+            <div class="frame1366wlight-thq-heading4-elm3">
+              <div class="frame1366wlight-thq-link-elm33">
+                <span class="frame1366wlight-thq-text-elm374">
+                  <span>How AI is Revolutionizing</span>
+                  
+                  <span>Business and Industry Today</span>
+                </span>
+              </div>
+            </div>
+            <div class="frame1366wlight-thq-link-elm34">
+              <span class="frame1366wlight-thq-text-elm391">Read More</span>
+              <img
+                src="public/icon2711-axut.svg"
+                alt="Icon2711"
+                class="frame1366wlight-thq-icon-elm48"
+              />
+            </div>
+          </div>
+          <div class="frame1366wlight-thq-footer-elm">
+            <div class="frame1366wlight-thq-img-elm3"></div>
+            <img
+              src="public/background2711-g6m-200h.png"
+              alt="Background2711"
+              class="frame1366wlight-thq-background-elm46"
+            />
+            <span class="frame1366wlight-thq-text-elm392">Get started</span>
+            <span class="frame1366wlight-thq-text-elm393">
+              <span>Join our AI-driven Creative</span>
+              <br />
+              <span>Community!</span>
+            </span>
+            <div class="frame1366wlight-thq-img-elm4"></div>
+            <span class="frame1366wlight-thq-text-elm396">
+              4689 weekly subscribe
+            </span>
+            <div class="frame1366wlight-thq-form-contactform-elm2">
+              <div class="frame1366wlight-thq-input-elm7">
+                <div class="frame1366wlight-thq-container-elm26">
+                  <span class="frame1366wlight-thq-text-elm397">
+                    Enter Email Address
+                  </span>
+                </div>
+              </div>
+              <input
+                type="text"
+                placeholder="SUBSCRIBE"
+                class="frame1366wlight-thq-input-elm8"
+              />
+              <div class="frame1366wlight-thq-label-elm">
+                <img
+                  src="public/input2711-g50g-200h.png"
+                  alt="Input2711"
+                  class="frame1366wlight-thq-input-elm9"
+                />
+                <span class="frame1366wlight-thq-text-elm398">
+                  I Agree To The Terms, Privacy Policy.
+                </span>
+              </div>
+            </div>
+            <div class="frame1366wlight-thq-background-elm47">
+              <div class="frame1366wlight-thq-container-elm27">
+                <div class="frame1366wlight-thq-link-elm35">
+                  <div class="frame1366wlight-thq-logo-elm"></div>
+                </div>
+                <span class="frame1366wlight-thq-text-elm399">
+                  <span>Our operations are centered on data</span>
+                  <br />
+                  <span>protection and security, guaranteeing</span>
+                  <br />
+                  <span>adherence to international regulations such</span>
+                  <br />
+                  <span>as GDPR and HIPAA.</span>
+                </span>
+                  <div class="frame1366wlight-thq-link-elm36"><i class="fa-brands fa-facebook-f"></i></div>
+                  <div class="frame1366wlight-thq-link-elm37"><i class="fa-brands fa-twitter"></i></div>
+                  <div class="frame1366wlight-thq-link-elm38"><i class="fa-brands fa-linkedin-in"></i></div>
+                  <div class="frame1366wlight-thq-link-elm39"><i class="fa-brands fa-youtube"></i></div>
+              
+                <span class="frame1366wlight-thq-text-elm404">Quick Links</span>
+                <img
+                  src="public/horizontaldivider2711-h3ha-200h.png"
+                  alt="HorizontalDivider2711"
+                  class="frame1366wlight-thq-horizontal-divider-elm1"
+                />
+                <img
+                  src="public/horizontaldivider2711-l1bq-200h.png"
+                  alt="HorizontalDivider2711"
+                  class="frame1366wlight-thq-horizontal-divider-elm2"
+                />
+                <img
+                  src="public/horizontaldivider2711-f3we-200h.png"
+                  alt="HorizontalDivider2711"
+                  class="frame1366wlight-thq-horizontal-divider-elm3"
+                />
+                <div class="frame1366wlight-thq-list-elm6">
+                  <div class="frame1366wlight-thq-item-link-elm10">
+                    <span class="frame1366wlight-thq-text-elm405">Home</span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-link-elm11">
+                    <span class="frame1366wlight-thq-text-elm406">
+                      About Us
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-link-elm12">
+                    <span class="frame1366wlight-thq-text-elm407">
+                      Our Project
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-link-elm13">
+                    <span class="frame1366wlight-thq-text-elm408">
+                      Latest Blog
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-link-elm14">
+                    <span class="frame1366wlight-thq-text-elm409">
+                      Contact Us
+                    </span>
+                  </div>
+                </div>
+                <span class="frame1366wlight-thq-text-elm410">
+                  Our Services
+                </span>
+                <img
+                  src="public/horizontaldivider2712-ocok-200h.png"
+                  alt="HorizontalDivider2712"
+                  class="frame1366wlight-thq-horizontal-divider-elm4"
+                />
+                <img
+                  src="public/horizontaldivider2712-9ew9-200h.png"
+                  alt="HorizontalDivider2712"
+                  class="frame1366wlight-thq-horizontal-divider-elm5"
+                />
+                <img
+                  src="public/horizontaldivider2712-c1en-200h.png"
+                  alt="HorizontalDivider2712"
+                  class="frame1366wlight-thq-horizontal-divider-elm6"
+                />
+                <div class="frame1366wlight-thq-list-elm7">
+                  <div class="frame1366wlight-thq-item-link-elm15">
+                    <span class="frame1366wlight-thq-text-elm411">
+                      Custom Technology
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-link-elm16">
+                    <span class="frame1366wlight-thq-text-elm412">
+                      AI-Powered Solution
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-link-elm17">
+                    <span class="frame1366wlight-thq-text-elm413">
+                      NLP &amp; Chatbots
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-link-elm18">
+                    <span class="frame1366wlight-thq-text-elm414">
+                      Computer Vision
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-item-link-elm19">
+                    <span class="frame1366wlight-thq-text-elm415">
+                      Machine Learning
+                    </span>
+                  </div>
+                </div>
+                <span class="frame1366wlight-thq-text-elm416">Contact Us</span>
+                <img
+                  src="public/horizontaldivider2712-p007-200h.png"
+                  alt="HorizontalDivider2712"
+                  class="frame1366wlight-thq-horizontal-divider-elm7"
+                />
+                <img
+                  src="public/horizontaldivider2712-f0zm-200h.png"
+                  alt="HorizontalDivider2712"
+                  class="frame1366wlight-thq-horizontal-divider-elm8"
+                />
+                <img
+                  src="public/horizontaldivider2712-h96m-200h.png"
+                  alt="HorizontalDivider2712"
+                  class="frame1366wlight-thq-horizontal-divider-elm9"
+                />
+                <div class="frame1366wlight-thq-background-elm48">
+                  <img
+                    src="public/icon2712-wch1k.svg"
+                    alt="Icon2712"
+                    class="frame1366wlight-thq-icon-elm49"
+                  />
+                </div>
+                <span class="frame1366wlight-thq-text-elm417">
+                  9550 Bolsa Ave #126, USA
+                </span>
+                <div class="frame1366wlight-thq-background-elm49">
+                  <img
+                    src="public/icon2712-g2hg.svg"
+                    alt="Icon2712"
+                    class="frame1366wlight-thq-icon-elm50"
+                  />
+                </div>
+                <div class="frame1366wlight-thq-link-elm40">
+                  <span class="frame1366wlight-thq-text-elm418">
+                    (+256) 214 203 215
+                  </span>
+                </div>
+                <div class="frame1366wlight-thq-background-elm50">
+                  <img
+                    src="public/icon2712-u6x7.svg"
+                    alt="Icon2712"
+                    class="frame1366wlight-thq-icon-elm51"
+                  />
+                </div>
+                <div class="frame1366wlight-thq-link-elm41">
+                  <span class="frame1366wlight-thq-text-elm419">
+                    info@touron.com
+                  </span>
+                </div>
+                <div class="frame1366wlight-thq-horizontal-border-elm7">
+                  <span class="frame1366wlight-thq-text-elm420">
+                    &copy; All Copyright 2025 by Sanmo. All Rights Reserved.
+                  </span>
+                  <div class="frame1366wlight-thq-link-elm42">
+                    <span class="frame1366wlight-thq-text-elm421">
+                      Terms &amp; Conditions
+                    </span>
+                  </div>
+                  <div class="frame1366wlight-thq-link-elm43">
+                    <span class="frame1366wlight-thq-text-elm422">
+                      Privacy Policy
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
   </body>
 </html>
