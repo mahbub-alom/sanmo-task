@@ -2290,7 +2290,7 @@ main {
   border-width: 2px;
   border-radius: 27.5px;
   background-size: cover;
-  background-image: url("public/tq_ivrkfuy5qy-o45-200h.png");
+  background-image: url("images/avatar-img3.jpg");
 }
 
 .frame1366wlight-thq-item-gallery-image-elm2 {
@@ -2308,7 +2308,7 @@ main {
   border-width: 2px;
   border-radius: 27.5px;
   background-size: cover;
-  background-image: url("public/tq_8dkwvjib9t-ahd-200h.png");
+  background-image: url("images/avatar-img2.jpg");
 }
 
 .frame1366wlight-thq-item-gallery-image-elm3 {
@@ -2326,7 +2326,7 @@ main {
   border-width: 2px;
   border-radius: 27.5px;
   background-size: cover;
-  background-image: url("public/tq_ywg6m22htu-xhba-200h.png");
+  background-image: url("images/avatar-img1.jpg");
 }
 
 .frame1366wlight-thq-item-elm10 {
@@ -2346,7 +2346,7 @@ main {
 }
 
 .frame1366wlight-thq-text-elm110 {
-  top: 16.5px;
+  top: 12.5px;
   left: 14.569999694824219px;
   color: rgba(255, 255, 255, 1);
   width: 26px;
@@ -2363,7 +2363,7 @@ main {
 }
 
 .frame1366wlight-thq-icon-elm11 {
-  top: 613.5px;
+  top: 602px;
   left: 426.70001220703125px;
   width: 18px;
   height: 16px;
@@ -2371,7 +2371,7 @@ main {
 }
 
 .frame1366wlight-thq-icon-elm12 {
-  top: 613.5px;
+  top: 602px;
   left: 448.9700012207031px;
   width: 18px;
   height: 16px;
@@ -2379,7 +2379,7 @@ main {
 }
 
 .frame1366wlight-thq-icon-elm13 {
-  top: 613.5px;
+  top: 602px;
   left: 471.2300109863281px;
   width: 18px;
   height: 16px;
@@ -2387,7 +2387,7 @@ main {
 }
 
 .frame1366wlight-thq-icon-elm14 {
-  top: 613.5px;
+  top: 602px;
   left: 493.5px;
   width: 18px;
   height: 16px;
@@ -2395,7 +2395,7 @@ main {
 }
 
 .frame1366wlight-thq-icon-elm15 {
-  top: 613.5px;
+  top: 602px;
   left: 515.77001953125px;
   width: 18px;
   height: 16px;
@@ -2403,7 +2403,7 @@ main {
 }
 
 .frame1366wlight-thq-text-elm111 {
-  top: 619.5px;
+  top: 615.5px;
   left: 426.70001220703125px;
   color: rgba(255, 255, 255, 1);
   width: 81px;
@@ -2471,7 +2471,7 @@ main {
 }
 
 .frame1366wlight-thq-text-elm113 {
-  top: 129px;
+  top: 123px;
   left: 622.5px;
   color: rgba(1, 15, 52, 1);
   width: 620px;
@@ -2488,7 +2488,7 @@ main {
 }
 
 .frame1366wlight-thq-text-elm116 {
-  top: 268px;
+  top: 260px;
   left: 622.5px;
   color: rgba(121, 126, 136, 1);
   width: 642px;
@@ -2505,7 +2505,7 @@ main {
 }
 
 .frame1366wlight-thq-list-elm2 {
-  top: 374px;
+  top: 362px;
   left: 622.5px;
   width: 350px;
   height: 176px;
@@ -2513,6 +2513,13 @@ main {
   position: absolute;
   align-items: flex-start;
   flex-shrink: 0;
+}
+.frame1366wlight-thq-list-elm2 i {
+  background: linear-gradient(266deg, #f63 -1.18%, #6d2cf9 96.14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 7px;
 }
 
 .frame1366wlight-thq-item-elm11 {
@@ -2586,7 +2593,7 @@ main {
   top: 2px;
   left: 26px;
   color: rgba(1, 15, 52, 1);
-  width: 310px;
+  width: 312px;
   height: auto;
   position: absolute;
   font-size: 16px;
@@ -2600,17 +2607,17 @@ main {
 }
 
 .frame1366wlight-thq-link-elm11 {
-  top: 580px;
+  top: 572px;
   left: 622.5px;
-  width: 211px;
+  width: 220px;
   height: 56px;
   display: flex;
   position: absolute;
-  background: linear-gradient(
+  /* background: linear-gradient(
     263deg,
     rgba(255, 102, 51, 1) 0%,
     rgba(109, 44, 249, 1) 96%
-  );
+  ); */
   align-items: flex-start;
   flex-shrink: 0;
   border-radius: 50px;
@@ -2742,7 +2749,7 @@ main {
   border-width: 0 1px 0 0;
 }
 
-.frame1366wlight-thq-overlay-overlay-blur-elm1 {
+/* .frame1366wlight-thq-overlay-overlay-blur-elm1 {
   top: 0px;
   left: 12px;
   width: 299px;
@@ -2753,6 +2760,29 @@ main {
   flex-shrink: 0;
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.11999999731779099);
+  transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+} */
+.frame1366wlight-thq-vertical-border-elm1:hover
+  .frame1366wlight-thq-overlay-overlay-blur-elm1,
+.frame1366wlight-thq-vertical-border-elm2:hover
+  .frame1366wlight-thq-overlay-overlay-blur-elm1,
+.frame1366wlight-thq-vertical-border-elm3:hover
+  .frame1366wlight-thq-overlay-overlay-blur-elm1,
+.frame1366wlight-thq-vertical-border-elm4:hover
+  .frame1366wlight-thq-overlay-overlay-blur-elm1 {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  /* top: 0px;
+  left: 12px; */
+  width: 299px;
+  height: 576.9199829101562px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.11999999731779099);
+  transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
 }
 
 .frame1366wlight-thq-text-elm134 {
@@ -4323,7 +4353,7 @@ main {
   height: 250px;
   display: flex;
   position: absolute;
-  background: linear-gradient(266deg, #F63 -1.18%, #6D2CF9 96.14%);
+  background: linear-gradient(266deg, #f63 -1.18%, #6d2cf9 96.14%);
   align-items: flex-start;
   flex-shrink: 0;
   border-radius: 125px;
@@ -4432,7 +4462,11 @@ main {
   height: 242.41000366210938px;
   display: flex;
   position: absolute;
-background: linear-gradient(56deg, #D5313D -141.22%, rgba(255, 255, 255, 0) 117.72%);
+  background: linear-gradient(
+    56deg,
+    #d5313d -141.22%,
+    rgba(255, 255, 255, 0) 117.72%
+  );
   align-items: flex-start;
   flex-shrink: 0;
   border-radius: 20px;
