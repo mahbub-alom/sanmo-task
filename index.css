@@ -1955,13 +1955,13 @@ main {
 
 .orbia-pricing-item.style-one.item-active
   .pricing-inner-wrapper
-  .pricing-button
+
   .theme-btn.gradient-btn {
   color: var(--white-color);
 }
 .orbia-pricing-item.style-one.item-active
   .pricing-inner-wrapper
-  .pricing-button
+
   .theme-btn.gradient-btn:before {
   background-color: transparent;
 }
@@ -1969,15 +1969,25 @@ main {
 @media screen and (max-width: 1199.98px) {
   .orbia-pricing-item.style-one
     .pricing-inner-wrapper
-    .pricing-button
+   
     .theme-btn {
     font-size: 14px;
     padding: 16px 20px;
   }
 }
+.orbia-pricing-item.style-one .pricing-inner-wrapper {
+  width: 25%;
+  text-align: end;
+}
+@media screen and (max-width: 991.98px) {
+  .orbia-pricing-item.style-one .pricing-inner-wrapper {
+    width: 100%;
+    text-align: start;
+  }
+}
 .orbia-pricing-item.style-one
   .pricing-inner-wrapper
-  .pricing-button
+ 
   .theme-btn.gradient-btn {
   position: relative;
   overflow: hidden;
@@ -1986,7 +1996,7 @@ main {
 }
 .orbia-pricing-item.style-one
   .pricing-inner-wrapper
-  .pricing-button
+
   .theme-btn.gradient-btn:before {
   position: absolute;
   content: "";
@@ -1996,7 +2006,7 @@ main {
 }
 .orbia-pricing-item.style-one
   .pricing-inner-wrapper
-  .pricing-button
+
   .theme-btn.gradient-btn
   span {
   position: relative;
@@ -2004,13 +2014,13 @@ main {
 }
 .orbia-pricing-item.style-one
   .pricing-inner-wrapper
-  .pricing-button
+
   .theme-btn.gradient-btn:hover {
   color: var(--white-color);
 }
 .orbia-pricing-item.style-one
   .pricing-inner-wrapper
-  .pricing-button
+ 
   .theme-btn.gradient-btn:hover:before {
   background-color: transparent;
 }
@@ -5209,7 +5219,7 @@ main {
   top: 211px;
   left: 12px;
   width: 276px;
-  height: 396px;
+  height: 368px;
   display: flex;
   position: absolute;
   align-items: flex-start;
@@ -5291,7 +5301,7 @@ main {
   top: 211px;
   left: 312px;
   width: 276px;
-  height: 396px;
+  height: 368px;
   display: flex;
   position: absolute;
   align-items: flex-start;
@@ -5373,7 +5383,7 @@ main {
   top: 211px;
   left: 612px;
   width: 276px;
-  height: 396px;
+  height: 368px;
   display: flex;
   position: absolute;
   align-items: flex-start;
@@ -5455,7 +5465,7 @@ main {
   top: 211px;
   left: 912px;
   width: 276px;
-  height: 396px;
+  height: 368px;
   display: flex;
   position: absolute;
   align-items: flex-start;
@@ -5603,15 +5613,11 @@ main {
 .frame1366wlight-thq-link-elm13 {
   top: 95px;
   left: 1005.8400268554688px;
-  width: 182px;
+  width: 185px;
   height: 56px;
   display: flex;
   position: absolute;
-  background: linear-gradient(
-    263deg,
-    rgba(255, 102, 51, 1) 0%,
-    rgba(109, 44, 249, 1) 96%
-  );
+
   align-items: flex-start;
   flex-shrink: 0;
   border-radius: 50px;
@@ -5794,7 +5800,7 @@ main {
   top: 2px;
   left: 25px;
   color: rgba(1, 15, 52, 1);
-  width: 135px;
+  width: 140px;
   height: auto;
   position: absolute;
   font-size: 16px;
@@ -5905,7 +5911,7 @@ main {
   top: 2px;
   left: 25px;
   color: rgba(1, 15, 52, 1);
-  width: 154px;
+  width: 160px;
   height: auto;
   position: absolute;
   font-size: 16px;
@@ -5963,14 +5969,34 @@ main {
   display: flex;
   overflow: hidden;
   position: absolute;
-  background: linear-gradient(
-    262deg,
-    rgba(255, 102, 51, 1) 0%,
-    rgba(109, 44, 249, 1) 96%
-  );
   align-items: flex-start;
   flex-shrink: 0;
   border-radius: 50px;
+  border:1px solid #6d2cf9;
+}
+
+.frame1366wlight-thq-link-elm14:hover{
+ background-image: linear-gradient(266deg, #f63 -1.18%, #6d2cf9 96.14%);
+  color: var(--white-color);
+  background-size: 150% 100%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+    background-position: 100% 0;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.frame1366wlight-thq-link-elm14:hover span {
+  color: var(--gray-color);
+}
+.frame1366wlight-thq-link-elm14 i {
+  color: var(--heading-color);
+  top: 21px;
+  left: 166px;
+  position: absolute;
+}
+.frame1366wlight-thq-link-elm14:hover i {
+  color: var(--gray-color);
+  
 }
 
 .frame1366wlight-thq-background-elm32 {
@@ -5981,6 +6007,7 @@ main {
   position: absolute;
   border-radius: 50px;
 }
+
 
 .frame1366wlight-thq-text-elm303 {
   top: 18px;
@@ -6076,7 +6103,7 @@ main {
   top: 132px;
   left: 60px;
   color: rgba(255, 255, 255, 1);
-  width: 140px;
+  width: 145px;
   height: auto;
   position: absolute;
   font-size: 16px;
@@ -6191,7 +6218,7 @@ main {
   top: 2px;
   left: 25px;
   color: rgba(255, 255, 255, 1);
-  width: 135px;
+  width: 140px;
   height: auto;
   position: absolute;
   font-size: 16px;
@@ -6302,7 +6329,7 @@ main {
   top: 2px;
   left: 25px;
   color: rgba(255, 255, 255, 1);
-  width: 154px;
+  width: 160px;
   height: auto;
   position: absolute;
   font-size: 16px;
@@ -6360,11 +6387,6 @@ main {
   display: flex;
   overflow: hidden;
   position: absolute;
-  background: linear-gradient(
-    262deg,
-    rgba(255, 102, 51, 1) 0%,
-    rgba(109, 44, 249, 1) 96%
-  );
   align-items: flex-start;
   flex-shrink: 0;
   border-radius: 50px;
@@ -6547,7 +6569,7 @@ main {
   top: 2px;
   left: 25px;
   color: rgba(1, 15, 52, 1);
-  width: 135px;
+  width: 140px;
   height: auto;
   position: absolute;
   font-size: 16px;
@@ -6658,7 +6680,7 @@ main {
   top: 2px;
   left: 25px;
   color: rgba(1, 15, 52, 1);
-  width: 154px;
+  width: 155px;
   height: auto;
   position: absolute;
   font-size: 16px;
@@ -6716,14 +6738,33 @@ main {
   display: flex;
   overflow: hidden;
   position: absolute;
-  background: linear-gradient(
-    262deg,
-    rgba(255, 102, 51, 1) 0%,
-    rgba(109, 44, 249, 1) 96%
-  );
   align-items: flex-start;
   flex-shrink: 0;
   border-radius: 50px;
+  border: 1px solid #6d2cf9;
+}
+.frame1366wlight-thq-link-elm16:hover{
+ background-image: linear-gradient(266deg, #f63 -1.18%, #6d2cf9 96.14%);
+  color: var(--white-color);
+  background-size: 150% 100%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+    background-position: 100% 0;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.frame1366wlight-thq-link-elm16:hover span {
+  color: var(--gray-color);
+}
+.frame1366wlight-thq-link-elm16 i {
+  color: var(--heading-color);
+  top: 21px;
+  left: 166px;
+  position: absolute;
+}
+.frame1366wlight-thq-link-elm16:hover i {
+  color: var(--gray-color);
+  
 }
 
 .frame1366wlight-thq-background-elm41 {
@@ -6753,7 +6794,7 @@ main {
 }
 
 .frame1366wlight-thq-icon-elm35 {
-  top: 36px;
+  top: 21px;
   left: 170.61000061035156px;
   width: 14px;
   height: 16px;
