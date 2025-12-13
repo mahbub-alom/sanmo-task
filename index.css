@@ -1121,6 +1121,9 @@ main {
   padding-bottom: 300px;
 }
 
+
+
+
 /* header all work  */
 .header-area {
   position: relative;
@@ -1944,6 +1947,12 @@ main {
 @media screen and (max-width: 1199.98px) {
   .nav-right-item .theme-btn {
     padding: 15px 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .nav-right-item .nav-button {
+    display: none !important;
   }
 }
 
